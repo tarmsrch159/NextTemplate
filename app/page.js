@@ -1,95 +1,90 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+
 
 export default function Home() {
+  const html = `
+  
+  `
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    
+    <div className="container-fluid p-0 mb-5">
+      <div className="owl-carousel header-carousel position-relative">
+        <div className="owl-carousel-item position-relative">
+          <img className="img-fluid" src="img/carousel-1.jpg" alt="" />
+          <div
+            className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+            style={{ background: "rgba(24, 29, 56, .7)" }}
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <div className="container">
+              <div className="row justify-content-start">
+                <div className="col-sm-10 col-lg-8">
+                  <h5 className="text-primary text-uppercase mb-3 animated slideInDown">
+                    Best Online Courses
+                  </h5>
+                  <h1 className="display-3 text-white animated slideInDown">
+                    The Best Online Learning Platform
+                  </h1>
+                  <p className="fs-5 text-white mb-4 pb-2">
+                    Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam
+                    no. Kasd rebum ipsum et diam justo clita et kasd rebum sea
+                    sanctus eirmod elitr.
+                  </p>
+                  <a
+                    href=""
+                    className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                  >
+                    Read More
+                  </a>
+                  <a
+                    href=""
+                    className="btn btn-light py-md-3 px-md-5 animated slideInRight"
+                  >
+                    Join Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="owl-carousel-item position-relative">
+          <img className="img-fluid" src="img/carousel-2.jpg" alt="" />
+          <div
+            className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+            style={{ background: "rgba(24, 29, 56, .7)" }}
+          >
+            <div className="container">
+              <div className="row justify-content-start">
+                <div className="col-sm-10 col-lg-8">
+                  <h5 className="text-primary text-uppercase mb-3 animated slideInDown">
+                    Best Online Courses
+                  </h5>
+                  <h1 className="display-3 text-white animated slideInDown">
+                    Get Educated Online From Your Home
+                  </h1>
+                  <p className="fs-5 text-white mb-4 pb-2">
+                    Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam
+                    no. Kasd rebum ipsum et diam justo clita et kasd rebum sea
+                    sanctus eirmod elitr.
+                  </p>
+                  <a
+                    href=""
+                    className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                  >
+                    Read More
+                  </a>
+                  <a
+                    href=""
+                    className="btn btn-light py-md-3 px-md-5 animated slideInRight"
+                  >
+                    Join Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   );
 }
